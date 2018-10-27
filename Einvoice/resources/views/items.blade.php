@@ -1,1 +1,1 @@
-items
+@extends('layouts.app')

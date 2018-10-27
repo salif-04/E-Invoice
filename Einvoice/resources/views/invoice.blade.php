@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,8 +84,8 @@
                         <div class="col-4"><label id="total"></label></div>
                     </div>
                 </div>
-                <div class="col-2"><button class="btn btn-primary">Print Invoice</button></div>
-                <div class="col-2"><button class="btn btn-danger">Email Invoice</button></div>
+                <a href="http://localhost/E-Invoice/Einvoice/public/invoices/create"><div class="col-2"><button class="btn btn-primary">Print Invoice</button></div></a>
+                {{-- <div class="col-2"><button class="btn btn-danger">Email Invoice</button></div> --}}
             </div>
     </div>
     <!-- script -->

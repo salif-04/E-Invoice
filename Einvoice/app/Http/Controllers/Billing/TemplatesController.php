@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class ItemsController extends Controller
+class TemplatesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ItemsController extends Controller
      */
     public function index()
     {
-        return view('items');
+        return view('templates.template');
     }
 
     /**
