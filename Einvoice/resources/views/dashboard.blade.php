@@ -73,7 +73,7 @@
             Manage Items
           </div> --}}
           <div class="chart-stage" id = 'wrapper'>
-            <button class="bigBtn btn btn-primary" style="font-size: 80px; padding: 100px 150px; text-align:center;">Manage Items</button>
+          <a href="http://localhost/E-Invoice/Einvoice/public/">  <button class="bigBtn btn btn-primary" style="font-size: 80px; padding: 100px 150px; text-align:center;">Manage Items</button>  </a>
           </div>
         </div>
       </div>
