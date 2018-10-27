@@ -85,7 +85,7 @@
                     <div class="col-2"><label for="">Cost</label></div>
                     <div class="col-1"></div>
             </div>
-                <form action="" id="invoice-form">
+                <form action="http://localhost/E-Invoice/Einvoice/public/invoices/create" id="invoice-form">
                     
                 </form>
             </div>
@@ -124,7 +124,7 @@
                     </div>
                 </div>
                 <div class="col-2"><button class="btn btn-primary" id="print-invoice">Print Invoice</button></div>
-                <div class="col-2"><button class="btn btn-danger" id="email-invoice">Email Invoice</button></div>
+                <!-- <div class="col-2"><button class="btn btn-danger" id="email-invoice">Email Invoice</button></div> -->
             </div>
     </div>
     <!-- script -->
