@@ -78,17 +78,6 @@
 
             <!-- invoice -->
             <div id="bill" class="col-6 jumbotron" style="overflow:auto;">
-<<<<<<< HEAD
-            <h3>INVOICE</h3>
-            <div class="row">
-                    <div class="col-5"><label for="">Item</label></div>
-                    <div class="col-2"><label for="">MRP</label></div>
-                    <div class="col-2"><label for="">Qty</label></div>
-                    <div class="col-2"><label for="">Cost</label></div>
-                    <div class="col-1"></div>
-            </div>
-                <form action="http://localhost/E-Invoice/Einvoice/public/invoices/create" id="invoice-form">
-=======
                 <form action="http://localhost/E-Invoice/bla.php" method="POST" id="invoice-form" name="invoice-form">
                     <div class="row">
                     <div class="col-9"><h3>INVOICE</h3></div>
@@ -102,7 +91,6 @@
                         <div class="col-1"></div>
                     </div>
                     <div id="billing"></div>
->>>>>>> origin/master
                     
                 </form>
             </div>
@@ -136,13 +124,6 @@
             <div class="row">
                         <div class="col-8"><label >Total</label></div>
                         <div class="col-4"><label id="total"></label></div>
-<<<<<<< HEAD
-                    </div>
-                </div>
-                <div class="col-2"><button class="btn btn-primary" id="print-invoice">Print Invoice</button></div>
-                <!-- <div class="col-2"><button class="btn btn-danger" id="email-invoice">Email Invoice</button></div> -->
-=======
->>>>>>> origin/master
             </div>
                 <!-- <div class="col-2"><button class="btn btn-primary" id="print-invoice">Print Invoice</button></div> -->
                 <!-- <div class="col-2"><button class="btn btn-danger" id="email-invoice">Email Invoice</button></div> -->
