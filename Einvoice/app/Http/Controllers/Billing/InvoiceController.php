@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Billing;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use App\Invoice;
 
 class InvoiceController extends Controller
 {
@@ -14,6 +15,7 @@ class InvoiceController extends Controller
      */
     public function index()
     {
+        //$invoices = Invoice::all();
         return view('invoice');
     }
 
@@ -35,7 +37,13 @@ class InvoiceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //Creating Invoice
+        $invoice = new Invoice;
+        //return $request;
+
+        //echo $_POST['item1'];
+
+        return $request;
     }
 
     /**
@@ -46,7 +54,7 @@ class InvoiceController extends Controller
      */
     public function show($id)
     {
-        //
+        return Invoice::find($id);
     }
 
     /**
