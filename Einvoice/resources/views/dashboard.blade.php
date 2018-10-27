@@ -62,7 +62,7 @@
             Create a new Invoice
           </div> --}}
           <div class="chart-stage" id = 'wrapper'>
-            <button class="bigBtn btn btn-success" style="font-size: 80px; padding: 100px 80px; text-align:center;">Create New Invoice</button>
+            <a href="http://localhost/E-Invoice/Einvoice/public/CreateInvoice">  <button class="bigBtn btn btn-success" style="font-size: 80px; padding: 100px 80px; text-align:center;">Create New Invoice</button></a>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
             Manage Items
           </div> --}}
           <div class="chart-stage" id = 'wrapper'>
-          <a href="http://localhost/E-Invoice/Einvoice/public/">  <button class="bigBtn btn btn-primary" style="font-size: 80px; padding: 100px 150px; text-align:center;">Manage Items</button>  </a>
+          <a href="http://localhost/E-Invoice/Einvoice/public/ManageItems">  <button class="bigBtn btn btn-primary" style="font-size: 80px; padding: 100px 150px; text-align:center;">Manage Items</button>  </a>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@
                 Manage Templates
           </div> --}}
           <div class="chart-stage" id = 'wrapper'>
-            <button class="bigBtn btn btn-primary" style="font-size: 50px; padding: 80px 90px; text-align:center;">Manage Templates</button>
+            <a href="http://localhost/E-Invoice/Einvoice/public/ManageTemplates">  <button class="bigBtn btn btn-primary" style="font-size: 50px; padding: 80px 90px; text-align:center;">Manage Templates</button></a>
           </div>
         </div>
       </div>

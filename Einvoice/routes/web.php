@@ -22,3 +22,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('home');
+Route::get('/CreateInvoice', 'Billing\InvoiceController@index');
+Route::get('/ManageItems', 'Billing\ItemsController@index');
+Route::get('/ManageTemplates', 'Billing\TemplateController@index');
