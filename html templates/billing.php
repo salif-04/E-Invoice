@@ -20,9 +20,10 @@
         #footer {
             position : fixed;
             display : block;
+            background-color : grey;
             bottom : 2px;
-
             z-index : 1;
+            width : 100%;
         }
         /*table {
             font-family: arial, sans-serif;
@@ -77,6 +78,7 @@
 
             <!-- invoice -->
             <div id="bill" class="col-6 jumbotron" style="overflow:auto;">
+<<<<<<< HEAD
             <h3>INVOICE</h3>
             <div class="row">
                     <div class="col-5"><label for="">Item</label></div>
@@ -86,6 +88,21 @@
                     <div class="col-1"></div>
             </div>
                 <form action="http://localhost/E-Invoice/Einvoice/public/invoices/create" id="invoice-form">
+=======
+                <form action="http://localhost/E-Invoice/bla.php" method="POST" id="invoice-form" name="invoice-form">
+                    <div class="row">
+                    <div class="col-9"><h3>INVOICE</h3></div>
+                    <div class="col-3"><button class="btn btn-success" id="print-invoice">Print Invoice</button></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><label for="">Item</label></div>
+                        <div class="col-2"><label for="">MRP</label></div>
+                        <div class="col-2"><label for="">Qty</label></div>
+                        <div class="col-2"><label for="">Price</label></div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div id="billing"></div>
+>>>>>>> origin/master
                     
                 </form>
             </div>
@@ -115,18 +132,22 @@
     <div id="editor"></div>
 
     <!-- footer -->
-    <div id="footer" class="container">
+    <div id="footer">
             <div class="row">
-                <div class="col-8">
-                    <div class="row">
                         <div class="col-8"><label >Total</label></div>
                         <div class="col-4"><label id="total"></label></div>
+<<<<<<< HEAD
                     </div>
                 </div>
                 <div class="col-2"><button class="btn btn-primary" id="print-invoice">Print Invoice</button></div>
                 <!-- <div class="col-2"><button class="btn btn-danger" id="email-invoice">Email Invoice</button></div> -->
+=======
+>>>>>>> origin/master
             </div>
+                <!-- <div class="col-2"><button class="btn btn-primary" id="print-invoice">Print Invoice</button></div> -->
+                <!-- <div class="col-2"><button class="btn btn-danger" id="email-invoice">Email Invoice</button></div> -->
     </div>
+
     <!-- script -->
     <script>
         var num = 0;
@@ -152,12 +173,11 @@
                     +"<div class='col-1'><button onclick='delete_item("+num+")'>X</button></div>"
                 +"</div>");*/
             
-                $("#invoice-form").append("<div class='row' id='bill"+num+"' class='form-group'>"
-                    +"<div class='col-5'><input type='text' class='form-control' placeholder='ITEM1' value='ITEM1' disabled></div>"
-                    +"<div class='col-2'><input type='number' class='form-control' placeholder='"+mrp+"' value='"+mrp+"' disabled></div>"
-                    +"<div class='col-2'><input type='number' class='form-control' placeholder='"+qty+"' value='"+qty+"' disabled></div>"
-                    +"<div class='col-2'><input type='number' class='form-control' placeholder='"+(mrp*qty)+"' value='"+(mrp*qty)+"' id='cost"+num+"' disabled></div>"
-                    /*+"<div class='col-1'><p onclick='delete_item("+num+")'>X</p></div>"*/
+                $("#billing").append("<div class='row' id='bill"+num+"' class='form-group'>"
+                    +"<div class='col-5'><input type='text' name='item"+num+"' class='form-control' placeholder='ITEM1' value='ITEM1' disabled></div>"
+                    +"<div class='col-2'><input type='number' name='mrp"+num+"' class='form-control' placeholder='"+mrp+"' value='"+mrp+"' disabled></div>"
+                    +"<div class='col-2'><input type='number' name='qty"+num+"' class='form-control' placeholder='"+qty+"' value='"+qty+"' disabled></div>"
+                    +"<div class='col-2'><input type='number' name='cost"+num+"' class='form-control' placeholder='"+(mrp*qty)+"' value='"+(mrp*qty)+"' id='cost"+num+"' disabled></div>"
                     +"<div class='col-1'><input type='button' onclick='delete_item("+num+")' value='X'></div>"
                 +"</div>");
                 total += qty*mrp;
@@ -197,6 +217,11 @@
                     'elementHandlers': specialElementHandlers
             });
             doc.save('sample-file.pdf');*/
+
+            $("print-invoice").click(function(){
+                form = document.forms[0] //assuming only form.
+                form.submit();
+            });
     </script>  
 </body>
 </html>
