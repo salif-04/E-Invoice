@@ -28,10 +28,26 @@
     ================================================== -->
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
-
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+
+    <!-- <div class="navbar">
+         @if (Route::has('login')) 
+            <div class="top-right links">
+                 @auth 
+                    <a href="{{ url('/dashboard') }}">Dashboard</a>
+                 @else
+                    <a href="{{ route('login') }}">Login</a>
+
+                    @if (Route::has('register')) 
+                        <a href="{{ route('register') }}">Register</a>
+                     @endif -->
+                <!-- @endauth 
+            </div>
+         @endif 
+    </div> -->
 
     <!-- home
     ================================================== -->
@@ -49,53 +65,6 @@
                     We generate online invoice and email it to the clients. We aim total replacement of paper invoices and bills.
                     </p>
                 </div>
-    
-                <!-- <div class="col-four tab-full pull-right info-contact">
-    
-                    <div class="info-block">
-                        <h3>Start A Conversation</h3>
-                        <p>
-                            <a href="mailto:#0" class="info-email">mailus@ourwebsite.com</a><br>
-                            <a href="tel:+18587338912" class="'info-phone">+1.858.733.8912</a>
-                        </p>
-                    </div>
-    
-                    <div class="info-block">
-                        <h3>Visit Our Office</h3>
-                        
-                        <p class="info-address">
-                            1600 Amphitheatre Parkway<br>
-                            Mountain View, CA<br>
-                            94043 US
-                        </p>
-                    </div>
-    
-                    <div class="info-block">
-                        <h3>Find Us On</h3>
-                        
-                        <ul class="info-social">
-                            <li>
-                                <a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i>
-                                <span>Facebook</span></a>
-                            </li>
-                            <li>
-                                <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span>Twiiter</span></a>
-                            </li>
-                            <li>
-                                <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i>
-                                <span>Instagram</span></a>
-                            </li>
-                            <li>
-                                <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i>
-                                <span>Behance</span></a>
-                            </li>
-                            <li>
-                                <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i>
-                                <span>Dribbble</span></a>
-                            </li>
-                        </ul>
-                    </div>
                     
                 </div> -->  <!-- end info contact -->
     
@@ -127,10 +96,10 @@
     
                  <ul class="home-social">
                         <li>
-                            <a href="https://www.github.com/salif-04/E-Invoice"><i class="fas fa-sign-in-alt" aria-hidden="true"></i><span>SignIn</span></a>
+                            <a href="{{ route('login') }}"><i class="fas fa-sign-in-alt" aria-hidden="true"></i><span>SignIn</span></a>
                         </li>
                         <li>
-                            <a href="https://www.github.com/salif-04/E-Invoice"><i class="fas fa-registered" aria-hidden="true"></i><span>Register</span></a>
+                            <a href="{{ route('register') }}"><i class="fas fa-registered" aria-hidden="true"></i><span>Register</span></a>
                         </li>
                         <li>
                             <a href="https://www.github.com/salif-04/E-Invoice"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a>
