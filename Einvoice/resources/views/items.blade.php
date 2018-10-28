@@ -35,17 +35,19 @@
         </center>
             <!-- Items -->
             <div id="items" class="container jumbotron" style="overflow:auto;">
-                <form action="" method="POST">
+                {{ Form::open(array('action' => 'Billing\ItemsController@store' , 'method' => 'POST' , 'id' => 'item-form' , 'name' => 'item-form')) }}                    
+                <form action="http://localhost/E-Invoice/Einvoice/public/items" method="POST">
                     <div class="form-group">
-                        <label for="items-name">Items Name</label>
-                        <input type="text" value="" name="item-name" class="form-control" placeholder="Enter Item Name">
+                        {{Form::label('i_name' , 'Item\'s Name')}}
+                        {{Form::text('item-name' , 'Enter the name' ,['class' => 'form-control'])}}
                     </div>
                     <div class="form-group">
-                        <label for="mrp">MRP</label>
-                        <input type="number" default="0" name="mrp" class="form-control" min="0" id="mrp" placeholder="0.0" value="0.0">
+                        {{Form::label('i_price' , 'Item\'s Price')}}
+                        {{Form::input('number' , 'price' , '0.0' ,['class' => 'form-control' , 'min' => '0'])}}
                     </div>
                     <button id="add-item" class="btn btn-primary">Add Item</button>
                 </form>
+                {{ Form::close() }}
             </div>
     </main>
 </body>

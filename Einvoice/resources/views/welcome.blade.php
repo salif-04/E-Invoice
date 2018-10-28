@@ -1,101 +1,130 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
 
-    <title>{{env('APP_NAME')}}</title>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>E-Invoice</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{{ asset('css/base.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/vendor.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
-            .full-height {
-                height: 100vh;
-            }
+    <!-- script
+    ================================================== -->
+    <script src="{{ asset('js/modernizr.js') }}"></script>
+    <script src="{{ asset('js/pace.min.js') }}"></script>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+    <!-- favicons
+    ================================================== -->
 
-            .position-ref {
-                position: relative;
-            }
+</head>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+<body>
 
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-
+    <!-- home
+    ================================================== -->
+    <a class="info-toggle" href="#0">
+            <span class="info-menu-icon"></span>
+        </a>
     
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/dashboard') }}">Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+        <div class="s-info">
+    
+            <div class="row info-wrapper">
+    
+                <div class="col-seven tab-full info-main">
+                    <h1>We are E-Invoice.</h1>
+                    <p>
+                    We generate online invoice and email it to the clients. We aim total replacement of paper invoices and bills.
+                    </p>
                 </div>
-            @endif
+                    
+                </div> -->  <!-- end info contact -->
+    
+            </div>  <!-- end info wrapper -->
+    
+        </div> <!-- end s-info -->
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+    <!-- info
+    ================================================== -->
+    <main class="s-home s-home--static">
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+            <div class="overlay"></div>
+    
+            <div class="home-content">
+                
+                <div class="row home-content__main">
+    
+                    <div class="col-eight home-content__text pull-right">
+                        <h3>Welcome to E-Invoice</h3>
+    
+                        <h1>
+                        E-invoice helps you send <br>
+                        online invoice to your clients. <br> It totally replaces paper invoices and bills.
+                        </h1>
+                        
+                    </div>  <!-- end home-content__text -->
+    
+                </div>  <!-- end home-content__main -->
+    
+                 <ul class="home-social">
+                        <li>
+                            <a href="{{ route('login') }}"><i class="fas fa-sign-in-alt" aria-hidden="true"></i><span>SignIn</span></a>
+                        </li>
+                        <li>
+                            <a href="{{ route('register') }}"><i class="fas fa-registered" aria-hidden="true"></i><span>Register</span></a>
+                        </li>
+                        <li>
+                            <a href="http://localhost/E-Invoice/Einvoice/public/dashboard"><i class="fas fa-tachometer-alt" aria-hidden="true"></i><span>Dashboard</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/salif-04/E-Invoice"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/salif-04/E-Invoice"><i class="fas fa-book" aria-hidden="true"></i><span>Docs</span></a>
+                        </li>
+
+                </ul> <!--end home-social -->
+    
+                <div class="row home-copyright">
+                    <span>Copyright 2018</span> 
+                    <span>Design by <a href="#">ALUCARD</a></span>
+                </div> <!-- end home-copyright -->
+    
+                <div class="home-content__line"></div>
+    
+            </div> <!-- end home-content -->
+    
+        </main> <!-- end s-home -->
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
-    </body>
-</html>
+    </div>
 
+    <!-- Java Script
+    ================================================== -->
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/plugins.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+
+</body>
+
+</html>
