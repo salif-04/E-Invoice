@@ -83,6 +83,7 @@
                     <div class="row">
                     <div class="col-9"><h3>INVOICE</h3></div>
                     <div class="col-3"><button class="btn btn-success" id="print-invoice">Print Invoice</button></div>
+                    <div style="display:none;"><input type="number" name="num" id="num"></div>
                     </div>
                     <div class="row">
                         <div class="col-5"><label for="">Item</label></div>
@@ -165,6 +166,7 @@
                 +'</div>');
                 total += qty*mrp;
                 $("#total").text(total);
+                $("#num").val(num);
             });
 
             // canvas jsPDF

@@ -29,3 +29,5 @@ Route::get('/dashboard', 'DashboardController@index')->name('home');
 Route::resource('invoices' , 'Billing\InvoiceController');
 Route::resource('items' , 'Billing\ItemsController');
 Route::resource('templs' , 'Billing\TemplatesController');
+
+Route::get('/mail/{email}', 'MailController@send')->name('email');

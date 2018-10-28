@@ -42,8 +42,8 @@ class InvoiceController extends Controller
         //return $request;
 
         //echo $_POST['item1'];
-
-        return $request;
+        return view('pdf.pdf')->with('data' , $request);
+        //return $request;
     }
 
     /**
