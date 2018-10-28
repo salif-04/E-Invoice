@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Billing;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use App\Item;
 
 class ItemsController extends Controller
 {
@@ -35,7 +36,13 @@ class ItemsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //return $request;
+        $item = new Item;
+        $item->name = $request->input('item-name');
+        $item->price = $request->input('price');
+        $item->save();
+        return view('items');
+
     }
 
     /**
