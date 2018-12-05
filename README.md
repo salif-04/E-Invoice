@@ -1,6 +1,6 @@
 # E-Invoice 
 [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com) &nbsp;&nbsp;&nbsp;
-![LARAVEL 5.6](https://img.shields.io/badge/LARAVEL-5.6-red.svg?style=for-the-badge)
+[![LARAVEL 5.6](https://img.shields.io/badge/LARAVEL-5.6-red.svg?style=for-the-badge)](https://laravel.com/docs/5.6)
 
 A Web-App that can help local shopkeepers to create an Online Invoice for every transaction and for all
 customers.
