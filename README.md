@@ -25,5 +25,6 @@ customer. It saves paper and has the potential to completely replace paper bills
 
 ## Contribute
 
+Please follow the guidlines on [CONTRIBUTING.md](https://github.com/salif-04/E-Invoice/blob/master/CONTRIBUTING.md)
 
 [![Gitter](https://img.shields.io/gitter/room/:user/:repo.svg?style=for-the-badge)](https://gitter.im/teamAlucard/E-Invoice?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
